@@ -1,11 +1,11 @@
 //---------------------------------------------------
 // Copyright (c) 2020-2021 Union Protocol Foundation
-// SPDX-License-Identifier: GPL-2.0-or-later
 //---------------------------------------------------
 
 pragma solidity >=0.4.22 <0.8.0;
 
 /**
+ * SPDX-License-Identifier: no-license
  */
 
 

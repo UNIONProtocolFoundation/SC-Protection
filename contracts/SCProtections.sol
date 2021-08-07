@@ -1,6 +1,5 @@
 //---------------------------------------------------
 // Copyright (c) 2020-2021 Union Protocol Foundation
-// SPDX-License-Identifier: GPL-2.0-or-later
 //---------------------------------------------------
 
 pragma solidity >=0.6.12;
@@ -261,6 +260,14 @@ contract SCProtections is Initializable, AccessControlUpgradeable, PausableUpgra
             }
         }
         return false;
+    }
+
+    function getActiveClaimLength(address _pool) public view returns(uint256){
+        return activeClaimsForPool[_pool].length;
+    }
+
+    function getActiveClaimForPool(address _pool, uint256 _index) public view returns (uint64){
+        return activeClaimsForPool[_pool][_index];
     }
 
     /** returns individual SC-P data for the protection specified by id
